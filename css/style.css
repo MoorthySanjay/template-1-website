@@ -172,6 +172,7 @@
 	text-decoration: none;
 	color: #1b1b1b;
 	padding-left: 30px;
+	transition: all 0.3s ease;
 }
 
 .navbar ul li a:hover {
@@ -181,6 +182,7 @@
 .navbar i {
 	padding-left: 1px;
 	font-size: 17px;
+	color: #00000087;
 }
 
 .drop-down {
@@ -247,6 +249,7 @@
 	margin-left: 30px;
 	border-radius: 5px;
 	display: inline-block;
+	transition: all 0.3s ease;
 }
 
 .nav-button a:hover {
@@ -279,7 +282,7 @@
 	font-weight: 500;
 	font-size: 23.7px;
 	padding-top: 16px;
-	padding-bottom: 40px;
+	padding-bottom: 50px;
 	line-height: 30px;
 }
 
@@ -287,15 +290,16 @@
 	text-decoration: none;
 	color: white;
 	background-color: #e03a3c;
-	padding: 13px 38px;
+	border: 2px solid #e03a3c;
+	padding: 12px 36px;
 	font-weight: 500;
 	border-radius: 5px;
+	transition: all 0.3s ease;
 }
 
 .banner-content a:hover {
 	border: 2px solid #fff;
 	background: transparent;
-	transition: all 0.2s ease;
 }
 
 /*----- banner Style Ends -----*/
@@ -312,7 +316,8 @@
 	width: 90px;
 	height: auto;
 	filter: grayscale(100%);
-	opacity: 0.5
+	opacity: 0.5;
+	transition: all 0.3s ease;
 }
 
 .com-logo img:hover {
@@ -327,7 +332,8 @@
 
 .about {
 	background-color: #1b1b1b;
-	padding: 80px 0;
+	padding-top: 80px;
+	padding-bottom: 60px;
 	transform: skewY(-3deg);
 }
 
@@ -355,6 +361,7 @@
 	border: 2px solid #e03a3c;
 	border-radius: 50px;
 	padding: 12px 35px;
+	transition: all 0.3s ease;
 }
 
 .about-content a:hover {
@@ -375,7 +382,6 @@
 }
 
 .about-contents-1 i {
-	display: block;
 	color: #e03a3c;
 	font-size: 35px;
 	padding-bottom: 15px;
@@ -384,7 +390,6 @@
 .about-contents-1 p {
 	color: #848484;
 	font-size: 15px;
-	font-weight: 600;
 	line-height: 22px;
 }
 
@@ -430,7 +435,7 @@
 
 }
 
-.icon {
+.about-content-box .icon {
 	height: 50px;
 	width: 50px;
 	background-color: #fff;
@@ -439,7 +444,7 @@
 	right: 107px;
 	border-radius: 50%;
 	text-align: center;
-	padding: 10px 0px;
+	line-height: 60px;
 	box-shadow: 0px 0px 20px 1px #84848424;
 }
 
@@ -451,15 +456,25 @@
 	padding: 30px 20px;
 }
 
-.about-detail-box h1 {
+.about-1-detail a {
+	text-decoration: none;
+}
+
+.about-1-detail h1 {
 	font-size: 18px;
 	font-weight: 600;
 	padding-left: 20px;
+	color: #252525;
 }
 
-.about-detail-box i {
+.about-detail-box-icon {
 	font-size: 40px;
+	color: #000;
 
+}
+
+.about-1-detail {
+	padding-top: 25px;
 }
 
 .active-1:hover {
@@ -467,10 +482,27 @@
 	border-color: #e0e0e0;
 }
 
+.active-1:hover .about-detail-box-icon {
+	color: #e03a3c;
+}
+
+.active-1:hover .about-detail-box-heading h1 {
+	color: #e03a3c;
+}
+
 .about-1-detail .active {
 	background-color: #e03a3c;
 	border-color: #e03a3c;
 	color: #fff;
+}
+
+.about-1-detail .active i {
+	color: #fff;
+}
+
+.about-1-detail .active h1 {
+	color: #fff;
+	font-weight: 600;
 }
 
 .about-2 {
@@ -650,7 +682,6 @@
 .port-img:hover img {
 	opacity: 0.5;
 	transform: scale(1.2);
-	transition: all 0.3s ease;
 }
 
 .port-img:hover .row-1-content {
@@ -686,6 +717,7 @@
 .port-img img {
 	height: auto;
 	width: 100%;
+	transition: all 0.3s ease;
 }
 
 
@@ -852,6 +884,7 @@
 	border-radius: 5px;
 	padding: 12px 35px;
 	margin: 33px;
+	transition: all 0.3s ease;
 }
 
 .pricing-details a:hover {
@@ -964,7 +997,7 @@
 
 .teams-details .team-icon {
 	position: absolute;
-	top: 225px;
+	top: 215px;
 	left: 55px;
 	visibility: hidden;
 	opacity: 0;
@@ -973,10 +1006,14 @@
 .teams-details .team-icon a {
 	color: #fff;
 	background-color: #e03a3c;
-	margin-right: 5px;
-	font-size: 20px;
-	padding: 5px 8px;
+	margin: 0 4px;
+	font-size: 18px;
 	border-radius: 50%;
+	display: inline-block;
+	height: 34px;
+	width: 34px;
+	text-align: center;
+	line-height: 34px;
 }
 
 .teams-details .team-icon a:hover {
@@ -1023,24 +1060,116 @@
 	line-height: 25px;
 }
 
-.contact-detail {}
+.contact-detail {
+	text-align: center;
+}
 
-.address {}
+.contact-detail h1 {
+	font-size: 20px;
+	font-weight: 700;
+	color: #999;
+	padding: 15px 0px;
+}
 
-.email {}
+.contact-detail h3 {
+	font-family: 'poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 100;
+	color: #6a6565c7;
+}
+
+.contact-detail p {
+	font-family: 'poppins', sans-serif;
+	font-size: 14px;
+	color: #6a6565c7;
+	padding-top: 10px;
+}
+
+.contact-detail i {
+	color: #e03a3c;
+	font-size: 25px;
+	font-weight: 600;
+	border: 1px dotted #e03a3c;
+	border-radius: 50px;
+}
+
+.address i {
+	padding: 10px 16px;
+}
+
+.email i {
+	padding: 10px 10px;
+}
+
+.call i {
+	padding: 10px 13px;
+}
+
+.address {
+	box-shadow: 0px 0px 40px 1px #84848424;
+	padding: 40px 0px;
+	margin-bottom: 25px;
+	border-radius: 5px;
+}
+
+.email {
+	box-shadow: 0px 0px 40px 1px #84848424;
+	padding: 40px 0px;
+	border-radius: 5px;
+}
 
 .call {
-	height: auto;
-	width: 100%;
+	box-shadow: 0px 0px 40px 1px #84848424;
+	padding: 40px 0px;
+	border-radius: 5px;
 }
 
-.form {
-	height: 300px;
+.forms {
+	box-shadow: 0px 0px 40px 1px #84848424;
+	border-radius: 5px;
+	padding: 30px 30px;
+	height: 100%;
 	width: auto;
-	background-color: black;
-	margin-top: 20px;
 }
 
+
+.name {
+	width: 100%;
+	height: 40px;
+	line-height: 2;
+	padding: 5px 10px;
+	margin-bottom: 25px;
+	border: 1px solid lightgray;
+	border-radius: 3px;
+}
+
+.message {
+	width: 100%;
+	height: auto;
+	line-height: 1;
+	padding: 5px 10px;
+}
+
+.submit {
+	text-align: center;
+}
+
+.send {
+	color: #fff;
+	background-color: #e03a3c;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	height: 45px;
+	width: 170px;
+	transition: all 0.3s ease;
+}
+
+.send:hover {
+	background-color: #eb4649;
+}
 
 /*----- Contact Style Ends -----*/
 
@@ -1050,28 +1179,121 @@
 
 
 .end {
-	height: 400px;
-	width: auto;
-	background-color: black;
+	background-color: #252525;
 	padding: 80px 0;
 }
 
-.end-presento {
-	height: 300px;
-	width: auto;
-	background-color: red;
+.end-presento h1 {
+	color: #fff;
+	font-size: 25px;
+	padding-bottom: 10px;
 }
 
-.end-link {
-	height: 300px;
-	width: auto;
-	background-color: red;
+.end-presento span {
+	color: #e03a3c;
+}
+
+.end-presento h5 {
+	color: #fff;
+	line-height: 1.5;
+	font-weight: 400;
+	font-size: 14px;
+	padding-bottom: 30px;
+}
+
+.end-presento p {
+	color: #fff;
+	line-height: 2;
+	font-size: 14px;
+}
+
+.end-para span {
+	color: #fff;
+	font-weight: 600;
+}
+
+
+.end-link h1 {
+	color: #fff;
+	font-size: 17px;
+	font-weight: 700;
+}
+
+.end-link .dash {
+	background: #e03a3c;
+	width: 20px;
+	height: 2px;
+	margin: 10px 0 8px 0;
+}
+
+.end-link li {
+	list-style: none;
+	line-height: 2.5;
+}
+
+.end-link i {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0 8px;
+}
+
+.end-link a {
+	text-decoration: none;
+	color: #adabab;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: poppins, sans-serif;
+	transition: all 0.3s ease;
+}
+
+.end-link a:hover {
+	color: #fff;
 }
 
 .end-join {
-	height: 300px;
-	width: auto;
-	background-color: red;
+	padding: 0px 60px;
+}
+
+.end-join p {
+	color: #fff;
+	font-family: poppins, sans-serif;
+	margin: 15px 0 40px 0;
+	line-height: 1.5;
+}
+
+.end-flex {
+	display: flex;
+	justify-content: center;
+}
+
+.end-fill {
+	background-color: #fff;
+	padding: 5px 0 5px 10px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin-left: 15px;
+}
+
+.end-fill input {
+	height: 30px;
+	width: 220px;
+	border: none;
+}
+
+.end-sub button {
+	background-color: #e03a3c;
+	color: #fff;
+	height: 40px;
+	width: 120px;
+	border: none;
+	cursor: pointer;
+	margin-left: -2px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-size: 16px;
+	font-weight: 500;
+
 }
 
 /*----- End Style Ends -----*/
@@ -1081,22 +1303,50 @@
 
 
 .footer {
-	height: 80px;
-	width: auto;
-	background-color: red;
-	padding: 80px 0;
+	background-color: #000000ed;
+	padding: 25px 0;
 }
 
-.footer-copy {
-	height: 70px;
-	width: auto;
-	background-color: black;
+.footer-copy h4 {
+	color: #fff;
+	font-family: poppins, sans-serif;
+	font-size: 14px;
+	font-weight: 100;
+	margin-bottom: 10px;
 }
 
-.footer-logo {
-	height: 70px;
-	width: auto;
-	background-color: black;
+.footer-copy h4 span {
+	font-weight: 800;
+}
+
+.footer-copy p {
+	color: #fff;
+	font-family: poppins, sans-serif;
+	font-size: 14px;
+}
+
+.footer-copy a {
+	text-decoration: none;
+	color: #e03a3c;
+
+}
+
+.footer-logo a {
+	color: #fff;
+	background-color: #252525;
+	padding: 10px 10px;
+	border-radius: 5px;
+	display: inline-block;
+	margin: 2px;
+	transition: all 0.3s ease;
+}
+
+.footer-logo span {
+	padding: 0 3px;
+}
+
+.footer-logo a:hover {
+	background-color: #e03a3c;
 }
 
 /*----- Footer Style Ends -----*/
